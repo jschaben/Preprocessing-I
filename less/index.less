@@ -115,23 +115,23 @@ html, body {
 		.bottomSectionItem{
 			width: 48%;
 			display: flex;
-			flex-direction: row;
+			flex-direction: column;
 			justify-content: flex-start;
 			align-items: flex-start;
-			font-size: 20px;
+			font-size: 25px;
 		.bottom-h2{
-			font-size: 35px;
+			font-size: 25px;
 			margin: 10px 0px;
 		}
 		.bottom-p{
 			font-size: 20px;
 			line-height: 28px;
-				@media(max-width: 500px;){
+				@media(max-width: 500px){
 					text-align: justify;
 			}
 		}
 		.stuff{
-			width: 50%;
+			width: 100%;
 			li{
 				display: flex;
 				justify-content: flex-start;
@@ -150,6 +150,34 @@ html, body {
 			}
 		}
 }
-
+.history{
+	font-size: 20px;
+	.work{
+		font-size:24px;
+		margin: 10px 0px;
+	}
+	.table{
+		border: 1px solid black;
+		border-collapse: collapse;
+		.tr:nth-child(odd){
+			background: @background;
+		}
+		.tr{
+			.th{
+				text-align: left;
+				font-size: 18px;
+			}
+			.th, .td{
+				border: 1px solid black;
+				border-collapse: collapse;
+				padding: 8px;
+			}
+		}
+	}
+}
+footer{
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+}
 
 }
